@@ -2,9 +2,7 @@ version: '2'
 services:
   site:
     build: .
-    ports:
-     - "5001:5000"
     volumes:
      - .:/code
-  redis2:
+  redis:
     image: "redis:alpine"
